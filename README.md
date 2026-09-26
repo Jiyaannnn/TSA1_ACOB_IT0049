@@ -58,5 +58,5 @@ The task seeder inserts 9 realistic tasks across 4 dates relative to the day it 
 
 ## Submission
 
-- GitHub repository: pending publication
-- Hosted application: pending deployment
+- GitHub repository: <https://github.com/Jiyaannnn/TA2_ACOB_IT0049>
+- Hosted application: no public deployment has been verified yet
