@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ta2-acob-it0049
+    name: tsa1-acob-it0049
     runtime: docker
     plan: free
     region: singapore
