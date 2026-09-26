@@ -34,7 +34,7 @@ PHP 8.2+, Composer 2, MySQL 8+, and the PHP extensions required by CodeIgniter (
    php spark db:seed TaskSystemSeeder
    ```
 
-5. Start the app with `php spark serve --port 8082`, then open <http://localhost:8082/>. Update `app.baseURL` if using another port.
+5. Start the app with `php spark serve --port 8080`, then open <http://localhost:8080/>. Update `app.baseURL` if using another port.
 
 The migration implements the required `tasks` and `users` tables. The seeder adds 9 realistic refill shop tasks across 4 dates relative to the day it runs, including today, plus exactly one demo user. Seed a fresh database once; running it again duplicates tasks and conflicts with the unique username.
 
