@@ -1,0 +1,12 @@
+<?php
+namespace App\Controllers;
+use App\Models\TaskModel;
+class Tasks extends BaseController {
+    public function today(): string {
+        $today = date('Y-m-d');
+        return view('tasks/today', ['title' => 'Today', 'activePage' => 'today', 'today' => $today, 'tasks' => (new TaskModel())->forDate($today)]);
+    }
+    public function index(): string {
+        return view('tasks/index', ['title' => 'All tasks', 'activePage' => 'tasks', 'tasks' => (new TaskModel())->allByDate()]);
+    }
+}

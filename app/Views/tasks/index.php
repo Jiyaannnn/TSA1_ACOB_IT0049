@@ -1,0 +1,6 @@
+<?= $this->extend('layouts/main') ?>
+<?= $this->section('content') ?>
+<section class="page-intro"><p class="eyebrow">Refill operations</p><h1>All tasks<span class="title-dot">.</span></h1><p>The full schedule for keeping the refill shop running smoothly.</p></section>
+<section class="list-section"><div class="section-heading"><div><p class="eyebrow">Shop task register</p><h2><?= count($tasks) ?> shop tasks across the calendar</h2></div><a class="text-link" href="<?= site_url('/') ?>">Back to today <span aria-hidden="true">↗</span></a></div>
+<?php if ($tasks === []): ?><div class="empty-state"><h3>No tasks yet</h3><p>Run the included seeder to add the demonstration tasks.</p></div><?php else: ?><div class="task-list"><?php foreach ($tasks as $task): ?><article class="task-row"><span class="task-indicator status-<?= esc(str_replace(' ', '-', $task['status'])) ?>" aria-hidden="true"></span><div class="task-main"><h3><?= esc($task['title']) ?></h3><span><?= esc(date('l, M j, Y', strtotime($task['task_date']))) ?></span></div><span class="status status-<?= esc(str_replace(' ', '-', $task['status'])) ?>"><?= esc(ucwords($task['status'])) ?></span></article><?php endforeach ?></div><?php endif ?></section>
+<?= $this->endSection() ?>
