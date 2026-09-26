@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: ledgerline-refill-tsa1
+    name: ta2-acob-it0049
     runtime: docker
     plan: free
     region: singapore
-    branch: codex/tsa1-ledgerline-refill
+    branch: master
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /

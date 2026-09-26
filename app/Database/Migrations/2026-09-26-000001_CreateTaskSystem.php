@@ -2,6 +2,7 @@
 namespace App\Database\Migrations;
 use CodeIgniter\Database\Migration;
 class CreateTaskSystem extends Migration {
+    protected $DBGroup = 'taskStore';
     public function up(): void {
         // The columns match the activity's required SQL schema.
         $this->forge->addField([

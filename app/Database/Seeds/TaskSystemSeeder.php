@@ -3,6 +3,7 @@ namespace App\Database\Seeds;
 use CodeIgniter\Database\Seeder;
 use DateTimeImmutable;
 class TaskSystemSeeder extends Seeder {
+    protected $DBGroup = 'taskStore';
     public function run(): void {
         $today = new DateTimeImmutable('today');
         $createdAt = (new DateTimeImmutable())->format('Y-m-d H:i:s');

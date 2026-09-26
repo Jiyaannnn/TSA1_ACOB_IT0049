@@ -38,6 +38,9 @@
 # database.default.DBPrefix =
 # database.default.port = 3306
 
+# The task system uses the same MySQL host and credentials with its own database.
+# database.taskStore.database = ledgerline_refill_tsa1
+
 # If you use MySQLi as tests, first update the values of Config\Database::$tests.
 # database.tests.hostname = localhost
 # database.tests.database = ci4_test

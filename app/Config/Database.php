@@ -162,6 +162,8 @@ class Database extends Config
      *
      * @var array<string, mixed>
      */
+    public array $taskStore = [];
+
     public array $tests = [
         'DSN'         => '',
         'hostname'    => '127.0.0.1',
@@ -193,6 +195,10 @@ class Database extends Config
     public function __construct()
     {
         parent::__construct();
+
+        // Task records live beside the existing Ledgerline database without altering it.
+        $this->taskStore = $this->default;
+        $this->taskStore['database'] = env('database.taskStore.database', 'ledgerline_refill_tsa1');
 
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that
