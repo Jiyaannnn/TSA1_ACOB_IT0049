@@ -1,28 +1,5 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
-<!-- This page receives MySQL records from Users::index() in the controller. -->
-
-<section class="page-heading page-heading-row">
-    <div><span class="eyebrow">Ledger / Users</span><h1>User accounts</h1><p>Staff identity records retrieved from the MySQL user ledger.</p></div>
-    <span class="record-count"><?= count($users) ?> accounts</span>
-</section>
-
-<section class="table-card">
-    <div class="table-wrap">
-        <table>
-            <thead><tr><th>Username</th><th>Full name</th><th>Date created</th></tr></thead>
-            <tbody>
-            <?php // The loop turns each user record into one visible table row. ?>
-            <?php foreach ($users as $user): ?>
-                <tr>
-                    <td data-label="Username"><code>@<?= esc($user['username']) ?></code></td>
-                    <td data-label="Full name"><span class="table-person"><span class="mini-avatar" aria-hidden="true"><?= esc(substr($user['full_name'], 0, 1)) ?></span><strong><?= esc($user['full_name']) ?></strong></span></td>
-                    <td data-label="Created"><time datetime="<?= esc($user['created_at']) ?>"><?= esc(date('M j, Y', strtotime($user['created_at']))) ?></time></td>
-                </tr>
-            <?php endforeach ?>
-            </tbody>
-        </table>
-    </div>
-</section>
-
+<section class="inner-hero"><p class="eyebrow"><span class="eyebrow-dot"></span> Refill shop / staff</p><h1>People behind <em>the counter.</em></h1><p>The original Ledgerline staff records remain part of the shop directory.</p><div class="inner-art" aria-hidden="true">↗</div></section>
+<section class="listing-section"><div class="section-top"><div><p class="eyebrow">Staff directory</p><h2><?= count($users) ?> staff records<span class="heading-period">.</span></h2></div></div><div class="table-frame"><table><thead><tr><th>Staff member</th><th>Username</th><th>Added</th></tr></thead><tbody><?php foreach ($users as $user): ?><tr><td data-label="Staff member"><span class="person-cell"><span class="person-monogram" aria-hidden="true"><?= esc(strtoupper(substr($user['full_name'], 0, 1))) ?></span><strong><?= esc($user['full_name']) ?></strong></span></td><td data-label="Username">@<?= esc($user['username']) ?></td><td data-label="Added"><?= esc(date('M j, Y', strtotime($user['created_at']))) ?></td></tr><?php endforeach ?></tbody></table></div></section>
 <?= $this->endSection() ?>

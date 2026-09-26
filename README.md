@@ -1,6 +1,6 @@
 # Ledgerline Refill
 
-Ledgerline Refill extends the original Ledgerline CodeIgniter 4 project with daily shop tasks. The existing customer and staff directory remains available. The new task system keeps refill station checks, customer orders, container returns, and stock work on a separate schedule.
+Ledgerline Refill extends the original Ledgerline CodeIgniter 4 project with daily shop tasks and a refill station themed interface. The existing customer and staff directory remains available. The new task system keeps refill station checks, customer orders, container returns, and stock work on a separate schedule.
 
 **Developer:** Jian Edward A. Acob · **Section:** TW32 · **Course:** IT0049 Web System Technologies
 
@@ -14,6 +14,8 @@ Ledgerline Refill extends the original Ledgerline CodeIgniter 4 project with dai
 | `/tasks` | Every task, ordered by date |
 | `/profile` | One task-system demo user |
 | `/about` | Refill shop concept and developer |
+
+The task pages are read-only. The assessment requires date filtering and display, but does not ask for task creation, editing, or deletion. The refill station illustration is a local SVG at `public/assets/images/refill-station.svg`.
 
 ## Data layout
 

@@ -1,10 +1,6 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
-<section class="page-heading page-heading-row"><div><span class="eyebrow">Refill bar / task schedule</span><h1>All shop tasks</h1><p>Every refill shop task in date order, including past and upcoming work.</p></div><span class="record-count"><?= count($tasks) ?> tasks</span></section>
-<section class="refill-task-list refill-task-list-page" aria-label="All tasks">
-<?php if ($tasks === []): ?><p class="task-empty">No tasks yet. Run the included seeder to add sample records.</p><?php endif ?>
-<?php foreach ($tasks as $task): ?>
-<article class="refill-task"><span class="task-check status-<?= esc(str_replace(' ', '-', $task['status'])) ?>" aria-hidden="true"></span><div><h2><?= esc($task['title']) ?></h2><span><?= esc(date('l, M j, Y', strtotime($task['task_date']))) ?></span></div><strong class="task-status status-<?= esc(str_replace(' ', '-', $task['status'])) ?>"><?= esc(ucwords($task['status'])) ?></strong></article>
-<?php endforeach ?>
-</section>
+<section class="inner-hero"><p class="eyebrow"><span class="eyebrow-dot"></span> Refill shop / complete schedule</p><h1>Every task, <em>every date.</em></h1><p>From dispenser care to container returns, this is the full task ledger in date order.</p><div class="inner-art" aria-hidden="true">↻</div></section>
+<section class="listing-section"><div class="section-top"><div><p class="eyebrow">The complete ledger</p><h2><?= count($tasks) ?> scheduled tasks<span class="heading-period">.</span></h2></div><a class="inline-link" href="<?= site_url('/') ?>">Back to today <span aria-hidden="true">↗</span></a></div>
+<?php if ($tasks === []): ?><div class="empty-state"><strong>No tasks yet.</strong><p>Run the included seeder to add demonstration tasks.</p></div><?php else: ?><div class="task-list"><?php foreach ($tasks as $index => $task): ?><article class="task-item"><span class="task-number"><?= esc(str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT)) ?></span><div class="task-copy"><h3><?= esc($task['title']) ?></h3><span><?= esc(date('l, F j, Y', strtotime($task['task_date']))) ?></span></div><span class="status status-<?= esc(str_replace(' ', '-', $task['status'])) ?>"><?= esc(ucwords($task['status'])) ?></span></article><?php endforeach ?></div><?php endif ?></section>
 <?= $this->endSection() ?>

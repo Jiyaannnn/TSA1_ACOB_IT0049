@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-labelledby="title desc">
+<title id="title">Neighborhood refill station</title>
+<desc id="desc">Illustrated glass refill containers beneath bulk dispensers, with leaves and measuring marks.</desc>
+<defs>
+  <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".5" fill="#2e5944" opacity=".18"/></pattern>
+  <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#f8ffec" stop-opacity=".95"/><stop offset="1" stop-color="#d5ead8" stop-opacity=".75"/></linearGradient>
+</defs>
+<rect width="760" height="640" rx="40" fill="#dcebdc"/>
+<rect width="760" height="640" rx="40" fill="url(#grain)"/>
+<circle cx="645" cy="125" r="156" fill="#c0dcc7"/>
+<circle cx="70" cy="570" r="200" fill="#c8e1cb"/>
+<path d="M32 478c83-87 194-69 284-13 128 81 232 68 412-31" fill="none" stroke="#8ab99c" stroke-width="2" stroke-dasharray="5 12"/>
+<path d="M88 131h573" stroke="#41785d" stroke-width="11" stroke-linecap="round"/>
+<path d="M125 139v153m230-153v153m230-153v153" stroke="#41785d" stroke-width="9" stroke-linecap="round"/>
+<rect x="88" y="162" width="139" height="171" rx="20" fill="#f6e6bb" stroke="#2d5b44" stroke-width="7"/>
+<rect x="294" y="162" width="139" height="171" rx="20" fill="#f2c9a5" stroke="#2d5b44" stroke-width="7"/>
+<rect x="500" y="162" width="139" height="171" rx="20" fill="#b7d4c0" stroke="#2d5b44" stroke-width="7"/>
+<path d="M98 232h119M304 232h119M510 232h119" stroke="#fff" stroke-opacity=".55" stroke-width="4"/>
+<text x="157" y="258" text-anchor="middle" fill="#234c39" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">SOAP</text>
+<text x="363" y="258" text-anchor="middle" fill="#234c39" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">DETERGENT</text>
+<text x="569" y="258" text-anchor="middle" fill="#234c39" font-family="sans-serif" font-size="16" font-weight="700" letter-spacing="2">CLEANER</text>
+<path d="M157 333v38m206-38v38m206-38v38" stroke="#2d5b44" stroke-width="8" stroke-linecap="round"/>
+<path d="M140 372h34m172 0h34m172 0h34" stroke="#2d5b44" stroke-width="9" stroke-linecap="round"/>
+<path d="M26 543h708" stroke="#2d5b44" stroke-width="13" stroke-linecap="round"/>
+<path d="M84 542v59m592-59v59" stroke="#2d5b44" stroke-width="13" stroke-linecap="round"/>
+<g stroke="#2d5b44" stroke-width="7" fill="url(#glass)">
+  <path d="M116 406h83v20c0 9 17 18 17 33v76H99v-76c0-15 17-24 17-33z"/>
+  <path d="M324 397h78v22c0 9 16 19 16 34v82H308v-82c0-15 16-25 16-34z"/>
+  <path d="M529 412h83v18c0 8 17 17 17 31v74H512v-74c0-14 17-23 17-31z"/>
+</g>
+<rect x="118" y="388" width="80" height="24" rx="6" fill="#2d5b44"/><rect x="324" y="379" width="78" height="24" rx="6" fill="#2d5b44"/><rect x="530" y="394" width="80" height="24" rx="6" fill="#2d5b44"/>
+<path d="M99 490h117v45H99zm209-4h110v49H308zm204 7h117v42H512z" fill="#b9d9bc" opacity=".8"/>
+<g stroke="#568a69" stroke-width="3"><path d="M108 500h16m-16 12h16m-16 12h16m193-25h16m-16 12h16m-16 12h16m204-23h16m-16 12h16m-16 12h16"/></g>
+<g fill="#397253"><path d="M692 519c-13-53-10-85 8-111 4 49 2 84-8 111z"/><path d="M691 481c-35-6-53-28-60-58 32 11 52 31 60 58z"/><path d="M695 461c11-31 31-48 59-54-12 29-30 47-59 54z"/></g>
+<text x="48" y="612" fill="#2d5b44" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="4">BRING BACK. REFILL. REPEAT.</text>
+</svg>
