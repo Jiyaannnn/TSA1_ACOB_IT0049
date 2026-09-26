@@ -15,7 +15,7 @@ Ledgerline Refill extends the original Ledgerline CodeIgniter 4 project with dai
 | `/profile` | One task-system demo user |
 | `/about` | Refill shop concept and developer |
 
-The task pages are read-only. The assessment requires date filtering and display, but does not ask for task creation, editing, or deletion. The refill station illustration is a local SVG at `public/assets/images/refill-station.svg`.
+The interface includes a three-step refill cycle, a progress indicator calculated from today’s task statuses, and a light/dark toggle that saves the browser preference. The task pages are read-only. The assessment requires date filtering and display, but does not ask for task creation, editing, or deletion. The refill station illustration is a local SVG at `public/assets/images/refill-station.svg`.
 
 ## Data layout
 
